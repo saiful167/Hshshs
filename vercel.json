@@ -1,15 +1,19 @@
+cat > vercel.json << 'EOF'
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.9"
     }
-  ],
+  },
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "api/index.py"
+      "src": "/api/extract",
+      "dest": "/api/index.py"
+    },
+    {
+      "src": "/",
+      "dest": "/api/index.py"
     }
   ]
 }
+EOF
