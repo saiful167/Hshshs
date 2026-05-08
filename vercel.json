@@ -1,18 +1,13 @@
 {
-  "functions": {
-    "api/index.py": {
-      "runtime": "python3.9"
-    }
-  },
-  "routes": [
+  "version": 2,
+  "rewrites": [
     {
-      "src": "/api/extract",
+      "source": "/api/extract",
       "dest": "/api/index.py"
     },
     {
-      "src": "/",
+      "source": "/(.*)",
       "dest": "/api/index.py"
     }
   ]
 }
-
