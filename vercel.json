@@ -1,4 +1,3 @@
-cat > vercel.json << 'EOF'
 {
   "functions": {
     "api/index.py": {
@@ -16,4 +15,4 @@ cat > vercel.json << 'EOF'
     }
   ]
 }
-EOF
+
