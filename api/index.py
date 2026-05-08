@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # কনফিগারেশন
-API_KEY = "I0OMQdVXt0CNl2cH3692KMJZcBbRCvV0EhOmHELnag"
+API_KEY = "3EHHcl4iSeERiAm0LwTduPdcN9qcMx7nQuH9RKj4xl"
 EXTRACT_API_URL = "https://api.extract.pics/v0/extractions"
 
 
